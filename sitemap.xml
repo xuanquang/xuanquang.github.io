@@ -2,6 +2,7 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
+            <loc>http://example.org/posts/aws-labs/</loc><lastmod>2022-12-25T21:57:40&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/theme-documentation-basics/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/theme-documentation-content/</loc><lastmod>2020-03-05T15:58:26&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/theme-documentation-built-in-shortcodes/</loc><lastmod>2020-03-04T16:29:41&#43;08:00</lastmod></url><url>
@@ -14,11 +15,13 @@
             <loc>http://example.org/posts/theme-documentation-music-shortcode/</loc><lastmod>2020-03-03T12:29:41&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/theme-documentation-bilibili-shortcode/</loc><lastmod>2020-03-03T12:29:41&#43;08:00</lastmod></url><url>
             <loc>http://example.org/posts/theme-documentation-typeit-shortcode/</loc><lastmod>2020-03-03T10:29:41&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/aws/</loc><lastmod>2022-12-25T21:57:40&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/lab/</loc><lastmod>2022-12-25T21:57:40&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/</loc><lastmod>2022-12-25T21:57:40&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/posts/</loc><lastmod>2022-12-25T21:57:40&#43;08:00</lastmod></url><url>
+            <loc>http://example.org/tags/</loc><lastmod>2022-12-25T21:57:40&#43;08:00</lastmod></url><url>
             <loc>http://example.org/categories/</loc><lastmod>2020-06-12T10:10:13&#43;03:00</lastmod></url><url>
             <loc>http://example.org/categories/documentation/</loc><lastmod>2020-06-12T10:10:13&#43;03:00</lastmod></url><url>
-            <loc>http://example.org/</loc><lastmod>2020-06-12T10:10:13&#43;03:00</lastmod></url><url>
-            <loc>http://example.org/posts/</loc><lastmod>2020-06-12T10:10:13&#43;03:00</lastmod></url><url>
-            <loc>http://example.org/tags/</loc><lastmod>2020-06-12T10:10:13&#43;03:00</lastmod></url><url>
             <loc>http://example.org/tags/installation/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod></url><url>
             <loc>http://example.org/tags/configuration/</loc><lastmod>2020-03-06T21:29:01&#43;08:00</lastmod></url><url>
             <loc>http://example.org/tags/markdown/</loc><lastmod>2020-03-05T15:58:26&#43;08:00</lastmod></url><url>

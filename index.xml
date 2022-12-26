@@ -3,9 +3,17 @@
         <title>My New Hugo Site</title>
         <link>http://example.org/</link>
         <description>This is my cool site</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 25 Dec 2022 21:57:40 &#43;0800</lastBuildDate>
             <atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Doing AWS Labs</title>
+    <link>http://example.org/posts/aws-labs/</link>
+    <pubDate>Sun, 25 Dec 2022 21:57:40 &#43;0800</pubDate>
+    <author>Quang</author>
+    <guid>http://example.org/posts/aws-labs/</guid>
+    <description><![CDATA[<p>Learning by doing</p>]]></description>
+</item>
+<item>
     <title>Theme Documentation - Basics</title>
     <link>http://example.org/posts/theme-documentation-basics/</link>
     <pubDate>Fri, 06 Mar 2020 21:29:01 &#43;0800</pubDate>
@@ -78,14 +86,6 @@
     <guid>http://example.org/posts/theme-documentation-mapbox-shortcode/</guid>
     <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"></a>
 <p>The <code>mapbox</code> shortcode supports interactive maps in Hugo with <a href="https://docs.mapbox.com/mapbox-gl-js" target="_blank" rel="noopener noreffer ">Mapbox GL JS</a> library.</p>]]></description>
-</item>
-<item>
-    <title>Theme Documentation - music Shortcode</title>
-    <link>http://example.org/posts/theme-documentation-music-shortcode/</link>
-    <pubDate>Tue, 03 Mar 2020 12:29:41 &#43;0800</pubDate>
-    <author>Dillon</author>
-    <guid>http://example.org/posts/theme-documentation-music-shortcode/</guid>
-    <description><![CDATA[<p>The <code>music</code> shortcode embeds a responsive music player based on <a href="https://github.com/MoePlayer/APlayer" target="_blank" rel="noopener noreffer ">APlayer</a> and <a href="https://github.com/metowolf/MetingJS" target="_blank" rel="noopener noreffer ">MetingJS</a>.</p>]]></description>
 </item>
 </channel>
 </rss>
