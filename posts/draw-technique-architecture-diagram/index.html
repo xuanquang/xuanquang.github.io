@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích - blog</title><meta name="Description" content="Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số."><meta property="og:title" content="[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích" />
+<meta property="og:description" content="Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/" /><meta property="og:image" content="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/sample-data-architecture.png"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-02-16T10:29:41+08:00" />
+<meta property="article:modified_time" content="2023-02-16T10:29:41+08:00" /><meta property="og:site_name" content="My cool site" />
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/sample-data-architecture.png"/>
+<meta name="twitter:title" content="[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích"/>
+<meta name="twitter:description" content="Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số."/>
+<meta name="application-name" content="My cool site">
+<meta name="apple-mobile-web-app-title" content="My cool site"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/" /><link rel="prev" href="http://xuanquang.github.io/posts/theme-documentation-mermaid-shortcode/" /><link rel="next" href="http://xuanquang.github.io/posts/aws-labs/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "http:\/\/xuanquang.github.io\/posts\/draw-technique-architecture-diagram\/"
+        },"image": [{
+                            "@type": "ImageObject",
+                            "url": "http:\/\/xuanquang.github.io\/posts\/draw-technique-architecture-diagram\/sample-data-architecture.png",
+                            "width":  1311 ,
+                            "height":  904 
+                        }],"genre": "posts","keywords": "archiecture","wordcount":  4422 ,
+        "url": "http:\/\/xuanquang.github.io\/posts\/draw-technique-architecture-diagram\/","datePublished": "2023-02-16T10:29:41+08:00","dateModified": "2023-02-16T10:29:41+08:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Ant"
+            },"description": "Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số."
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('auto' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'auto' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="blog">My cool site</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="blog">My cool site</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Ant</a></span>&nbsp;<span class="post-category">included in <a href="/categories/archiecture/"><i class="far fa-folder fa-fw" aria-hidden="true"></i>archiecture</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2023-02-16">2023-02-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;4422 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;21 minutes&nbsp;</div>
+        </div><div class="featured-image"><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/draw-technique-architecture-diagram/sample-data-architecture.png"
+        data-srcset="/posts/draw-technique-architecture-diagram/sample-data-architecture.png, /posts/draw-technique-architecture-diagram/sample-data-architecture.png 1.5x, /posts/draw-technique-architecture-diagram/sample-data-architecture.png 2x"
+        data-sizes="auto"
+        alt="/posts/draw-technique-architecture-diagram/sample-data-architecture.png"
+        title="Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số." /></div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#tham-khảo-năm-sơ-đồ-kiến-trúc-kỹ-thuật-với-các-hướng-dẫn-để-dễ-dàng-thiết-kế-và-triển-khai-giải-pháp-số">Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số.</a></li>
+      </ul>
+    </li>
+  </ul>
+
+  <ul>
+    <li><a href="#1-sơ-đồ-kiến-trúc-ứng-dụng-application-architecture-diagram">1/ Sơ đồ Kiến trúc Ứng dụng (Application Architecture Diagram)</a></li>
+    <li><a href="#2-sơ-đồ-kiến-trúc-tích-hợp-integration-architecture-diagram">2/ Sơ đồ Kiến trúc Tích hợp (Integration Architecture Diagram)</a></li>
+    <li><a href="#3-sơ-đồ-kiến-trúc-triển-khai-deployment-architecture-diagram">3/ Sơ đồ Kiến trúc Triển khai (Deployment Architecture Diagram)</a></li>
+    <li><a href="#4-sơ-đồ-kiến-trúc-devops-devops-architecture-diagram">4/ Sơ đồ Kiến trúc DevOps (DevOps Architecture Diagram)</a></li>
+    <li><a href="#5-sơ-đồ-kiến-trúc-dữ-liệu-data-architecture-diagram">5/ Sơ đồ Kiến trúc Dữ liệu (Data Architecture Diagram)</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><h3 id="tham-khảo-năm-sơ-đồ-kiến-trúc-kỹ-thuật-với-các-hướng-dẫn-để-dễ-dàng-thiết-kế-và-triển-khai-giải-pháp-số">Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số.</h3>
+<h1 id="cách-vẽ-sơ-đồ-kiến-trúc-kỹ-thuật-hữu-ích">Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích</h1>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/draw-technique-architecture-diagram/technical-diagram-01.jpeg"
+        data-srcset="/posts/draw-technique-architecture-diagram/technical-diagram-01.jpeg, /posts/draw-technique-architecture-diagram/technical-diagram-01.jpeg 1.5x, /posts/draw-technique-architecture-diagram/technical-diagram-01.jpeg 2x"
+        data-sizes="auto"
+        alt="/posts/draw-technique-architecture-diagram/technical-diagram-01.jpeg"
+        title="/posts/draw-technique-architecture-diagram/technical-diagram-01.jpeg" width="720" height="480" /></p>
+<p>Photo by <a href="https://unsplash.com/@killerfvith?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreffer ">Alex wong</a> on <a href="https://unsplash.com/?utm_source=medium&amp;utm_medium=referral" target="_blank" rel="noopener noreffer ">Unsplash</a></p>
+<p>Một sơ đồ kiến trúc kỹ thuật (technical architecture diagram) cung cấp cái nhìn toàn cảnh về cơ sở hạ tầng của tổ chức bạn. Sơ đồ minh họa cách các thành phần (components) trong một hệ thống tương tác với nhau ở quy mô lớn.</p>
+<p>Có nhiều loại sơ đồ kiến trúc phục vụ các mục đích khác nhau. Thông thường, một kiến trúc sư giải pháp số (digital solution architect) sẽ phác thảo các sơ đồ kiến trúc cấp cao (high-level architecture diagrams) để cung cấp thiết kế giải pháp công nghệ. Có hai lợi ích chính của một sơ đồ kiến trúc:</p>
+<ol>
+<li><strong>Chúng giúp hiểu rõ</strong> — cung cấp cái nhìn tổng quan về các hệ thống có sẵn và sự tương tác, điều này giúp dễ dàng đánh giá tác động từ các thay đổi.</li>
+<li><strong>Chúng cải thiện việc giao tiếp và cộng tác với nhau</strong> — sắp xếp kế hoạch thực hiện giữa các dự án và các bên liên quan (stakeholders) để giảm khoảng cách trong giao tiếp. Một sơ đồ kiến trúc hữu ích nên giải quyết từng nhu cầu của các bên liên quan ở một mức độ nhất định.</li>
+</ol>
+<p>Trong bài viết này, tôi sẽ đề cập đến năm sơ đồ kiến trúc đã giúp tôi rất nhiều trong việc thiết kế và triển khai giải pháp số. Đó là:</p>
+<ul>
+<li><strong>Sơ đồ Kiến trúc Ứng dụng (Application Architecture Diagram)</strong></li>
+<li>*<em>Sơ đồ Kiến trúc  Tích hợp (Integration Architecture Diagram)</em></li>
+<li><strong>Sơ đồ Kiến trúc  Triển khai (Deployment Architecture Diagram)</strong></li>
+<li><strong>Sơ đồ Kiến trúc  DevOps (DevOps Architecture Diagram)</strong></li>
+<li><strong>Sơ đồ Kiến trúc  Dữ liệu (Data Architecture Diagram)</strong></li>
+</ul>
+<blockquote>
+<p>Một lưu ý nhanh: Các thực hành tốt nhất (best practices) thường khác nhau giữa các tổ chức. Tôi sẽ chia sẻ những gì đã mang lại hiệu quả cho tôi trong quá trình triển khai các giải hạ tầng đám mây - từ góc độ AWS Cloud.</p>
+</blockquote>
+<p>Cũng như mã phần mềm, tính hữu ích của một kiến trúc được vẽ-tốt (well-drawn architecture) thường bị bỏ qua cho đến khi hệ thống trở nên lớn và phức tạp.Một sơ đồ kiến trúc hữu ích có sự kết hợp của ba thành phần sau:</p>
+<ol>
+<li><strong>Tiêu chuẩn hóa luồng quy trình thông tin (Standardised process flow of information)</strong>, ví dụ đọc từ trên-xuống — điều này cho biết cách các thành phần tương tác với nhau.</li>
+<li><strong>Cung cấp đầy đủ thông tin thành phần với các nhóm hợp lý (Provides sufficient information in components with logical groupings)</strong> — điều này chỉ ra hạn chế ở đâu, ví dụ ranh giới mạng (network boundaries).</li>
+<li><strong>Bao gồm các chú thích với nhiều thông tin hơn (Includes annotations with more information)</strong> — chi tiết hơn ở từng bước để dễ dàng triển khai các giải pháp, ví dụ miêu tả quy trình.</li>
+</ol>
+<p>Tôi sẽ cố gắng cung cấp một số ngữ cảnh và ví dụ về cách mỗi sơ đồ được sử dụng để giúp thiết kế và triển khai giải pháp.</p>
+<blockquote>
+<p>FYI: Các sơ đồ mẫu minh họa bên dưới được tạo bằng công cụ miễn phí: <a href="https://draw.io/" target="_blank" rel="noopener noreffer ">https://draw.io</a>/.</p>
+</blockquote>
+<h2 id="1-sơ-đồ-kiến-trúc-ứng-dụng-application-architecture-diagram">1/ Sơ đồ Kiến trúc Ứng dụng (Application Architecture Diagram)</h2>
+<p>Sơ đồ Kiến trúc Ứng dụng bao gồm tổng quan ở mức độ cao (high-level overview) của các thành phần và tương tác cơ bản trong hệ thống, ví dụ microservices, databases, v.v&hellip;</p>
+<p>Sơ đồ Kiến trúc Ứng dụng chủ yếu đề cập đến “What” liên quan đến hệ thống.</p>
+<p>Cách sử dụng phổ biến của sơ đồ này là để dễ dàng lập kế hoạch và triển khai giải pháp dưới dạng đánh giá tác động của việc nâng cấp, thay thế hoặc hợp nhất các ứng dụng hiện có. Với các ứng dụng mới liên tục được phát hành và hứa hẹn tăng hiệu quả, giảm chi phí (đặc biệt trong không gian container hóa), điều quan trọng là có một cái nhìn tổng quan về các ứng dụng trong hệ thống của bạn.</p>
+<p>Chẳng hạn, các ứng dụng của bạn có thể ở trong nhiều cụm container (container clusters), như bare-metal Kubernetes, AWS ECS, &hellip; vì nhiều lý do; và bạn có nhiệm vụ củng cố và hợp nhất các ứng dụng để chỉ còn dùng một nền tảng quản lý container, ví dụ bare-metal Kubernetes để tối ưu hóa chi phí và hợp lý hóa hoạt động trên môi trường multi-cloud. Khi mới bắt đầu, một số câu hỏi sau đây có thể xuất hiện trong đầu bạn:</p>
+<ul>
+<li>Những loại ứng dụng trong từng cụm (What types of applications are in each cluster)?</li>
+<li>Các phụ thuộc và tương tác của ứng dụng là gì (What are the applications’ dependencies and interactions)?</li>
+<li>Kết quả dự định và trạng thái mong muốn của kiến trúc là gì (What’s the intended outcome and desired state of the architecture)?</li>
+</ul>
+<p>Sơ đồ ví dụ dưới đây minh họa trạng thái hiện trạng (as-is state) của kiến trúc ứng dụng. Các thành phần trong “Logic Layer” của sơ đồ giải quyết hai điểm đầu tiên.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/draw-technique-architecture-diagram/sample-application-architecture.jpg"
+        data-srcset="/posts/draw-technique-architecture-diagram/sample-application-architecture.jpg, /posts/draw-technique-architecture-diagram/sample-application-architecture.jpg 1.5x, /posts/draw-technique-architecture-diagram/sample-application-architecture.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/draw-technique-architecture-diagram/sample-application-architecture.jpg"
+        title="/posts/draw-technique-architecture-diagram/sample-application-architecture.jpg" width="1981" height="1219" /></p>
+<p>Sơ đồ mẫu của tác giả</p>
+<p>Với các câu hỏi được giải quyết, giải sử kết hoạch là hợp nhất ứng dụng AWS ECS cluster vào Kubernetes cluster, có một số mục hành động yêu cầu đầu vào (inputs) từ các bên liên quan khác nhau dựa trên sơ đồ.</p>
+<p>Ví dụ, bạn có thể liên lạc với project manager để kiểm tra các loại tích hợp đối tác (types of partner integrations), ví dụ internal/external, với DevOps để kiểm tra keys và quản lý cấu hình, và với các kỹ sư hệ thống để kiểm tra cách tổ chức các clusters &hellip; để hỗ trợ phân tích tác động.</p>
+<p>Sau khi có được thông tin liên quan, bạn sẽ có thể thiết lập trạng thái mong muốn/tương lai (desired/to-be state) của kiến trúc và triển khai kế hoạch factoring trong các cân nhắc quan trọng.</p>
+<p>Các thành phần hữu ích trong sơ đồ này:</p>
+<ul>
+<li><strong>Các thành phần được nhóm thành các lớp và bối cảnh hạn chế (Grouped components into layers and bounded contexts)</strong> —mỗi ranh giới có thể gợi ý một nhóm stakeholder khác, ví dụ các kỹ sư dữ liệu cho lớp dữ liệu (data layer), nhóm nền tảng cốt lõi (core platform team) cho các dịch vụ chung/chia sẻ&hellip; cung cấp ý tưởng ai sẽ tham gia lập kế hoạch/thảo luận.</li>
+<li><strong>Chú thích với thông tin bổ sung (Annotations with additional information)</strong> — cung cấp chi tiết về cách từng cluster được quản lý và tổ chức, ví dụ dựa trên bản chất của ứng dụng và mối quan tâm về bảo mật, &hellip; có lẽ được bao gồm để dễ dàng thảo luận.</li>
+<li><strong>Chi tiết và ngữ cảnh của ứng dụng (Application details and context)</strong> — nêu rõ tên và loại ứng dụng để cung cấp ý tưởng về cách các ứng dụng được tổ chức.</li>
+</ul>
+<p>Bạn có thể tải sơ đồ mẫu bên trên  <a href="https://jimmysoh.s3-ap-southeast-1.amazonaws.com/medium/sample-application-architecture.drawio" target="_blank" rel="noopener noreffer ">ở đây</a>.</p>
+<h2 id="2-sơ-đồ-kiến-trúc-tích-hợp-integration-architecture-diagram">2/ Sơ đồ Kiến trúc Tích hợp (Integration Architecture Diagram)</h2>
+<p>Một Sơ đồ Kiến trúc Tích hợp khá tương tự với Sơ đồ Kiến trúc Ứng dụng, ngoại trừ việc nhấn mạnh thêm vào các giao thức tích hợp giữa các thành phần, ví dụ Batch, Events, REST/SOAP/XML, v.v&hellip;</p>
+<p>Sơ đồ Kiến trúc Tích hợp đề cập đến “How” liên quan đến tính liên kết cùa các thành phần trong hệ thống.</p>
+<p>Một cách ứng dụng phổ biến của sơ đồ này là để dễ dàng cho việc tích hợp của các hệ thống bên ngoài bởi các đối tác hoặc các hệ thống nội bộ khác.
+Ngày nay, với việc các doanh nghiệp thiết lập quan hệ đối tác mới thông qua hệ sinh thái để tạo ra giá trị chung, bạn có thể phải thường xuyên làm việc với các đối tác để tích hợp các hệ thống với nhau, ví dụ  e-commerce, thanh toán, đặt phòng khách sạn, chuyến bay&hellip;</p>
+<p>Ví dụ, có một đối tác có ứng dụng du lịch muốn đưa danh mục sản phẩm của bạn lên ứng dụng của họ để tăng sự lựa chọn cho người tiêu dùng. Bạn có nhiệm vụ làm việc với kiến trúc sư giải pháp của đối tác để tạo điều kiện thuận lợi cho việc tích hợp các hệ thống nhằm cung cấp dịch vụ của bạn cho họ. Đối tác thích dùng dịch vụ thông qua REST APIs.</p>
+<p>Một số trong những câu hỏi này có thể đến với tâm trí bạn:</p>
+<ul>
+<li>Các dịch vụ hiện có của tôi được tổ chức và khám phá bên trong/bên ngoài thế nào (How are my services currently organised and exposed internally/externally)?</li>
+<li>Đối tác muốn tích hợp với hệ thống của tôi như thế nào, ví dụ mạng nội bộ, giao thức&hellip; (How does the partner want to integrate with my system, e.g. internal networks, protocols, etc.)?</li>
+<li>Tôi bảo mật, theo dõi và quản lý việc tích hợp các dịch vụ của tôi như thế nào (How do I secure, track and manage the integration of my exposed services)?</li>
+</ul>
+<p>Sơ đồ tích hợp dưới đây minh họa (ở high level) việc giao thức truyền thông hiện có giữa các thành phần. Bạn cũng sẽ thấy cách một số dịch vụ được tiếp xúc với các developers bên thứ ba thông qua External API Gateway ở logic layer</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/draw-technique-architecture-diagram/sample-integration-architecture.jpg"
+        data-srcset="/posts/draw-technique-architecture-diagram/sample-integration-architecture.jpg, /posts/draw-technique-architecture-diagram/sample-integration-architecture.jpg 1.5x, /posts/draw-technique-architecture-diagram/sample-integration-architecture.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/draw-technique-architecture-diagram/sample-integration-architecture.jpg"
+        title="/posts/draw-technique-architecture-diagram/sample-integration-architecture.jpg" width="1981" height="1219" /></p>
+<p>Sơ đồ của tác giả</p>
+<p>Từ sơ đồ trên, bạn nhận ra rằng hệ thống được thiết kế hướng-API (API-driven), giúp dễ dàng tích hợp. Hầu như toàn bộ dịch vụ đều được tiếp xúc (exposed) thông qua dịch vụ web, bao gồm các thành phần lưu trữ dữ liệu.</p>
+<p>Bước kế tiếp là kiểm tra với đối tác về danh sách dịch vụ mà họ yêu cầu, cách thức (mode) tích hợp, ví dụ internal hay external, và tham chiếu chéo (cross-reference) các yêu cầu với những dịch vụ được cung cấp thông qua danh mục API. Ngoài ra còn có những mục hành động tiếp theo, như làm việc với các kỹ sư hệ thống để quyết định về bảo mật và giám sát các dịch vụ được tiếp xúc.</p>
+<p>Đôi khi, có thể có những khoảng trống (gaps) như đối tác muốn tích hợp bên ngoài, nhưng dịch vụ của bạn chỉ có thể tiếp xúc nội bộ (internal), hoặc thiếu một số thuộc tính dữ liệu (data attributes) cụ thể. Trong những trường hợp như vậy, những nỗ lực phải được tính đến để đáp ứng các yêu cầu. Sơ đồ tích hợp phải làm nổi bật chi tiết, như  internal services/APIs, link to API catalogue, &hellip; để nhanh chóng xác định những lỗ hổng.</p>
+<p>Các thành phần hữu ích trong sơ đồ này: Bạn có thể tải sơ đồ trên tại</p>
+<ul>
+<li><strong>Các thành phần được nhóm thành các lớp và bối cảnh hạn chế (Grouped components into layers and bounded contexts)</strong> — một dấu hiệu của  internal/external API gateways and services</li>
+<li><strong>Chú thích với thông tin bổ sung (Annotations with additional information)</strong> — các liên kết tham chiếu đến danh mục API nơi có thể thu thập chi tiết các thuộc tính dữ liệu để đánh giá các lỗ hổng.</li>
+<li><strong>Chi tiết và bối cảnh của ứng dụng (Application details and context)</strong> — các dịch vụ được đặt tên phù hợp để cho phép nhanh chóng đánh giá yêu cầu với thực tế.</li>
+</ul>
+<p>Bạn có thể tải sơ đồ trên tại <a href="https://jimmysoh.s3-ap-southeast-1.amazonaws.com/medium/sample-integration-architecture.drawio" target="_blank" rel="noopener noreffer ">đây</a>.</p>
+<h2 id="3-sơ-đồ-kiến-trúc-triển-khai-deployment-architecture-diagram">3/ Sơ đồ Kiến trúc Triển khai (Deployment Architecture Diagram)</h2>
+<p>Một Sơ đồ Kiến trúc Triển khai bao gồm các ranh giới mạng (network boundaries) và các thành phần phần cứng/phần mềm cơ sở hạ tầng. Kích thước và số lượng của các thành phần thỉnh thoảng cũng được chỉ định để dễ dàng lập kế hoạch.</p>
+<p>Kiến trúc Triển khai chủ yếu giải quyết  “Where” và “How many” liên quan đến các thành phần trong hệ thống.</p>
+<p>Một sử dụng phổ biến của sơ đồ này là tạo thuận lợi để nâng cấp ứng dụng và dịch vụ để xử lý tải trọng bổ sung (additional load) hoặc tối ưu hóa tài nguyên. Theo thời gian, khi có nhiều người dùng hơn, đến từ nhiều nơi trên thế giới, bắt đầu sử dụng ứng dụng và dịch vụ của bạn, các tài nguyên hiện có của bạn có thể không xử lý nổi tải trọng và quy mô (scale and load) tăng thêm.</p>
+<p>Chẳng hạn, API gateway của bạn hiện được triển khai trong một EC2 instance lớn duy nhất (t2.xlarge) và gần đây đang đối mặt với sự gián đoạn dịch vụ không liên tục do hiệu suất. Bạn có nhiệm vụ chuyển đổi API gateway thành thiết lập (với các máy mới) trong nhiều availability zones (AZ) để cải thiện tính khả dụng của gateway. Một vài câu hỏi có thể xuất hiện trong đầu của bạn là:</p>
+<ul>
+<li>Có bao nhiêu AZ (How many AZ)?</li>
+<li>Phiên bản mới được triển khai ở đâu (Where to deploy the instance)?</li>
+<li>Phiên bản mới sẽ lớn đến mức nào (How large would the new instance be)?</li>
+</ul>
+<p>Kiến trúc triển khai bên dưới minh họa việc thiết lập hiện tại của mạng và các thành phần. Có hai AZs cho ứng dụng hiện tại với API gateway instance ở ap-southeast-1.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/draw-technique-architecture-diagram/sample-deployment-architecture.jpg"
+        data-srcset="/posts/draw-technique-architecture-diagram/sample-deployment-architecture.jpg, /posts/draw-technique-architecture-diagram/sample-deployment-architecture.jpg 1.5x, /posts/draw-technique-architecture-diagram/sample-deployment-architecture.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/draw-technique-architecture-diagram/sample-deployment-architecture.jpg"
+        title="/posts/draw-technique-architecture-diagram/sample-deployment-architecture.jpg" width="1321" height="808" /></p>
+<p>Sơ đồ của tác giả</p>
+<p>Dựa trên sơ đồ trên, bạn có thông tin về kích thước của API Gateway instance hiện tại, ví dụ (t2.xlarge), để dùng như một tiêu chuẩn cho kích thước instance mới. Ngoài ra, còn có một database instance tương ứng được gắn thẻ cho API Gateway instance ở cùng availability zone.</p>
+<p>Sơ đồ cũng nhắc nhở các thảo luận xa hơn về vị trí của instance mới, như private subnet-2b hoặc 2c hoặc liệu có thể lập kế hoạch tiếp theo về việc hợp nhất một API gateway trung tâm cho tất cả các dịch vụ trên AWS Core Platform để tập trung hóa việc quản lý API.</p>
+<p>Bước kế tiếp sẽ là ước tính ảnh hưởng dựa trên các kế hoạch triển khai khác nhau, như tập trung hóa hoặc phi tập trung việc quản lý API,&hellip; và đề xuất để ban quản lý và các bên liên quan tương ứng tiến hành đánh giá.</p>
+<p>Thường có nhiều cách tiếp cận khác nhau để giải quyết các vấn đề hiệu suất như vậy. Nếu bạn ở một tổ chức lớn, quan trọng là phải điều chỉnh cách tiếp cận thông qua một ủy ban kiến trúc trung tâm để quản trị kiến trúc phù hợp.</p>
+<p>Các thành phần hữu ích trong sơ đồ này:</p>
+<ul>
+<li><strong>Ranh giới mạng (Network boundaries)</strong> —  thể hiện sự cô lập của các thành phần và hàm ý kết nối tiềm ẩn.</li>
+<li><strong>Kích thước phiên bản (Instance sizing)</strong> — cho biết kích thước của máy để dễ dàng tối ưu hóa và tiêu chuẩn hóa tài nguyên với các yêu cầu về hiệu suất.</li>
+<li><strong>Hiển thị các phần của tích hợp bên ngoài (Show parts of external integration)</strong> — thể hiện phần mở rộng của hệ thống (nếu có) với các hệ thống và mạng khác để chỉ ra một bức tranh lớn hơn và tạo điều kiện sắp xếp hợp lý tài nguyên, như common/shared services, &hellip; và các cơ hội cộng tác.</li>
+</ul>
+<p>Bạn có thể tải sơ đồ trên tại <a href="https://jimmysoh.s3-ap-southeast-1.amazonaws.com/medium/sample-deployment-architecture.drawio" target="_blank" rel="noopener noreffer ">đây</a>.</p>
+<h2 id="4-sơ-đồ-kiến-trúc-devops-devops-architecture-diagram">4/ Sơ đồ Kiến trúc DevOps (DevOps Architecture Diagram)</h2>
+<p>Một Sơ đồ Kiến trúc DevOps thường bao gồm các thành phần hệ thống, quy trình và môi trường. Loại sơ đồ này giống như sơ đồ-luồng-quy-trình  (process flow diagram) minh họa các hoạt động để chuyển một codebase/app sang production.</p>
+<p>Kiến trúc DevOps chủ yếu giải quyết “How” và “What” liên quan đến việc tối ưu hóa các quy trình và luồng triển khai.</p>
+<p>Một ứng dụng chung của sơ đồ này là tạo điều kiện thuận lợi để cải tiến các quy trình liên quan đến triển khai ứng dụng. Những thay đổi liên tiếp của kiến trúc hệ thống và các cải tiến đối với công cụ/phương thức (tools/methods) triển khai, ví dụ Containers, Serverless, &hellip; thúc đẩy nhu cầu thích nghi những quy trình và kiến trúc   DevOps hiện có để theo kịp thời đại.</p>
+<p>Chẳng hạn, quản lý ứng dụng, ví dụ configs &hellip; cho nhóm của bạn hiện chưa được chuẩn hóa trên các nền tảng, và bạn có nhiệm vụ khám phá việc triển khai một công cụ mới (Habitat) để quản lý hiệu quả các ứng dụng. Một số câu hỏi có thể xuất hiện trong đầu bạn là:</p>
+<ul>
+<li>Luồng quy trình hiện tại là gì (What’s the current process flow)?</li>
+<li>Các cấu hình hiện tại được quản lý trên các ứng dụng như thế nào (How are configurations currently managed across applications)?</li>
+<li>Các loại ứng dụng nào sẽ được triển khai (What are the types of applications to be deployed)?</li>
+</ul>
+<p>Kiến trúc DevOps bên dưới minh họa luồng quy trình để triển khai những ứng dụng vào một Kubernetes cluster trên các môi trường. Có thể có nhiều biến thể khác nhau cho các loại ứng dụng khác nhau.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/draw-technique-architecture-diagram/sample-devops-architecture.jpg"
+        data-srcset="/posts/draw-technique-architecture-diagram/sample-devops-architecture.jpg, /posts/draw-technique-architecture-diagram/sample-devops-architecture.jpg 1.5x, /posts/draw-technique-architecture-diagram/sample-devops-architecture.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/draw-technique-architecture-diagram/sample-devops-architecture.jpg"
+        title="/posts/draw-technique-architecture-diagram/sample-devops-architecture.jpg" width="1614" height="804" /></p>
+<p>Sơ đồ của tác giả</p>
+<p>Dựa trên sơ đồ trên, bạn có thể lấy thông tin về các giai đoạn khác nhau của luồng DevOps để xác định những quy trình có thể được nâng cao bằng công cụ mới, ví dụ như quản lý cấu hình, hoặc điểm tích hợp (integration points) để kết hợp (những) công cụ mới.</p>
+<p>Những sơ đồ DevOps của các loại ứng dụng khác nhau có thể nhắc nhở những thảo luận xa hơn để khám phá một bộ quy trình và những công cụ mới tiềm năng nhằm đáp ứng nhu cầu của nhóm.</p>
+<p>Bước tiếp theo đòi hỏi sự tham gia của các bên liên quan khác nhau để thảo luận về các cải tiến của quy trình và công cụ cũng như tác động tiềm tàng đến các hoạt động hiện có với việc triển khai Habitat, ví dụ yêu cầu plugins mới, &hellip;</p>
+<p>Đối với các tổ chức lớn, các quy trình phức tạp hơn nhiều với các mối lo ngại về bảo mật trên các môi trường, hạn chế rất nhiều việc triển khai tài nguyên. Ngoài ra còn có nhiều ứng dụng kế thừa tuân thủ các phương thức triển khai cũ. Do đó, bạn nên tài liệu hóa các quy trình cho các biến thể ứng dụng khác nhau và xem xét chúng một cách tổng thể để cải tiến hiệu quả.</p>
+<p>Các thành phần hữu ích trong sơ đồ này:</p>
+<ul>
+<li><strong>Hiển thị các quy trình trên các môi trường (Showcase processes across environments)</strong> — DevOps thường trải dài trên nhiều môi trường, và việc trình bày các quy trình quảng bá ứng dụng thường hữu ích.</li>
+<li><strong>Chú thích với thông tin bổ sung (Annotations with additional information)</strong> — các chi tiết bổ sung cho các giai đoạn và các quy trình tương ứng để tạo điều kiện thảo luận và lập kế hoạch.</li>
+<li><strong>Quyết định cổng và quy trình người dùng (Decision gateways and user processes)</strong> — DevOps không chỉ bao gồm những thành phần hệ thống. Để xây dựng văn hóa DevOps tốt, không thể bỏ qua yếu tố thành phần con người.</li>
+</ul>
+<p>Bạn có thể tải sơ đồ trên tại <a href="https://jimmysoh.s3-ap-southeast-1.amazonaws.com/medium/sample-devops-architecture.drawio" target="_blank" rel="noopener noreffer ">đây</a>.  Và đây là  <a href="https://www.slideshare.net/SonatypeCorp/nexus-and-continuous-delivery?utm_source=devopsdotcom&amp;utm_medium=bitly&amp;utm_campaign=slideshare" target="_blank" rel="noopener noreffer ">danh sách 31 kiến trúc cho DevOps</a>.</p>
+<h2 id="5-sơ-đồ-kiến-trúc-dữ-liệu-data-architecture-diagram">5/ Sơ đồ Kiến trúc Dữ liệu (Data Architecture Diagram)</h2>
+<p>Một Sơ đồ Kiến trúc Dữ liệu chứa các thành phần trong một hệ thống xác định cách thức dữ liệu được thu thập, xử lý, lưu trữ và sử dụng. Sơ đồ cũng minh họa luồng dữ liệu qua các thành phần hệ thống bên trong cơ sở hạ tầng CNTT.</p>
+<p>Kiến trúc dữ liệu đề cập “How” và “Where” liên quan đến quá trình xử lý, luồng và cách sử dụng dữ liệu.</p>
+<p>Một trong những trường hợp sử dụng của sơ đồ này là để dễ dàng nâng cấp tài  nguyên để tối ưu chi phí  thu thập và lưu trữ dữ liệu. Ngày nay, với lượng dữ liệu được thu thập ngày càng tăng và chi phí lưu trữ dữ liệu ngày càng rẻ, kiến trúc dữ liệu cho tổ chức chắc chắn sẽ được điều chỉnh liên tục.</p>
+<p>Chẳng hạn, hiện tại nhật ký dữ liệu (logs data) của API gateway được lưu trữ trong một cơ sở dữ liệu (database) MySQL  và được hiển thị trực quan trên một bảng điều khiển web. Khi dữ liệu được tích tụ theo thời gian vào database, các truy vấn (queries) trở nên chậm hơn và tốn kém hơn. Bạn có nhiệm vụ giải quyết vấn đề hiệu suất và thiết lập nền tảng cho các khả năng máy học (machine learning) và phân tích (analytics) trong tương lai trên các data sets từ những ứng dụng khác. Một vài câu hỏi có thể xuất hiện trong đầu bạn:</p>
+<ul>
+<li>Dữ liệu hiện tại đang được xử lý thế nào (How is data being processed currently)?</li>
+<li>Dữ liệu đang được lưu trữ và sử dụng ở đâu (Where is the data being stored and used)?</li>
+<li>Chúng ta đang đề cập đến bao nhiêu dữ liệu (How much data are we talking about)?</li>
+</ul>
+<p>Kiến trúc dữ liệu bên dưới minh họa luồng dữ liệu từ nguồn đến lưu trữ và trực quan hóa. Trong vài trường hợp, có thể hữu ích khi đưa những thành phần mới vào sơ đồ để hiển thị những thay đổi nhằm dễ dàng thảo luận.</p>
+<p><img
+        class="lazyload"
+        src="/svg/loading.min.svg"
+        data-src="/posts/draw-technique-architecture-diagram/sample-data-architecture.jpg"
+        data-srcset="/posts/draw-technique-architecture-diagram/sample-data-architecture.jpg, /posts/draw-technique-architecture-diagram/sample-data-architecture.jpg 1.5x, /posts/draw-technique-architecture-diagram/sample-data-architecture.jpg 2x"
+        data-sizes="auto"
+        alt="/posts/draw-technique-architecture-diagram/sample-data-architecture.jpg"
+        title="/posts/draw-technique-architecture-diagram/sample-data-architecture.jpg" width="1311" height="904" /></p>
+<p>Sơ đồ của tác giả</p>
+<p>Sơ đồ trên giải quyết các câu hỏi liên quan đến quá trình xử lý, lưu trữ và tỷ lệ tăng dữ liệu - đủ hợp lý để bắt đầu thảo luận về việc khám phá các lựa chọn thay thế tiềm năng, để hỗ trợ các hệ thống truy vấn mới và các trường hợp sử dụng kinh doanh.</p>
+<p>Những bước tiếp theo có thể là lôi kéo các bên liên quan tham gia thảo luận chi tiết về việc triển khai, ví dụ thời gian lưu trữ dữ liệu (data retention periods), những yêu cầu về hiệu suất, hiểu biết sâu sắc và mục tiêu kinh doanh, mô hình và cấu trúc dữ liệu, ước tính chi phí&hellip;</p>
+<p>Ở những tổ chức lớn, có thể một nhóm quản lý dữ liệu trung tâm chịu trách nhiệm hợp nhất và quản lý các quy trình, thành phần dữ liệu chính (master data components and processes). Bạn nên thiết lập một tiêu chuẩn chung để áp dụng (càng nhiều càng tốt) trên các ứng dụng trong tổ chức thông qua việc sử dụng các sơ đồ đó.</p>
+<p>Các thành phần hữu ích trong sơ đồ này:</p>
+<ul>
+<li><strong>Trình bày các thành phần nguyên trạng và tương lai (Display as-is and to-be components)</strong> — cung cấp tổng quan những thay đổi trong nháy mắt để đánh tác động và tập trung vào các điểm thảo luận.</li>
+<li><strong>Biểu thị tỷ lệ tăng dữ liệu (Indication of data increment rate)</strong> — đem đến cho các bên liên quan cảm nhận về quy mô dữ liệu cho mục đích thiết kế giải pháp và ước tính.</li>
+<li><strong>Nhóm các thành phần một cách hợp lý (Logical grouping of components)</strong> —minh họa các mục tiêu của các thành phần ở những giai đoạn khác nhau, ví dụ xử lý, trực quan hóa &hellip; để tạo điều kiện thuận liện cho việc dễ dàng đọc.</li>
+</ul>
+<p>Bạn có thể tải sơ đồ trên tại: <a href="https://jimmysoh.s3-ap-southeast-1.amazonaws.com/medium/sample-data-architecture.drawio" target="_blank" rel="noopener noreffer ">đây</a>.</p>
+<h1 id="takeaways">Takeaways</h1>
+<ol>
+<li><strong>Sơ đồ Kiến trúc Ứng dụng (Application architecture diagram)</strong> cung cấp một tổng quan high-level  của các thành phần để dễ dàng cho việc lập kế hoạch dưới dạng đánh giá tác động dựa trên việc nâng cấp, thay thế và hợp nhất các ứng dụng.</li>
+<li><strong>Sơ đồ Kiến trúc Tích hợp (Integration architecture diagram)</strong> tập trung vào các giao thức tích hợp giữa các thành phần ứng dụng để dễ dàng tích hợp các hệ thống đối tác internal/external.</li>
+<li><strong>Sơ đồ Kiến trúc Triển khai (Deployment architecture diagram)</strong> làm nổi bật ranh giới mạng và kích thước các thành phần cơ sở hạ tầng để dễ dàng lập kế hoạch và nâng cấp ứng dụng, dịch vụ cho mục đích tối ưu hóa.</li>
+<li><strong>Sơ đồ Kiến trúc DevOps (DevOps architecture diagram)</strong> minh họa luồng quy trình liên quan đến hệ thống và con người trên các môi trường triển khai, để dễ dàng cải tiến và tự động hóa quy trình.</li>
+<li><strong>Sơ đồ Kiến trúc Dữ liệu (Data architecture diagram)</strong> thể hiện luồng dữ liệu giữa các thành phần hệ thống trong một cơ sở hạ tầng CNTT và cho biết cách thức dữ liệu được thu thập, xử lý, lưu trữ và sử dụng để dễ dàng tối ưu hóa hệ thống dữ liệu.</li>
+</ol>
+<p>Các sơ đồ này thường được sử dụng với nhau trong thiết kế giải pháp số vì chúng bổ sung cho nhau và cung cấp cho các bên liên quan một bức tranh toàn cảnh về hệ thống.</p>
+<p>Tuy nhiên, hãy nhớ rằng &ldquo;the map is not the territory&rdquo;. Hầu như không thể tài liệu hóa mọi phần của hệ thống với số lượng các bộ phận chuyển động và thay đổi. Tôi đã gặp nhiều trường hợp các thay đổi và thành phần không được ghi lại trong sơ đồ vì nhiều lý do khác nhau. Hãy chuẩn bị để ứng xử với các kịch bản như thế.</p>
+<p>Ngoài ra, có nhiều biến thể của sơ đồ kiến trúc (dựa trên Google images) phục vụ cho các mục đích khác nhau - không có cách cố định để vẽ những sơ đồ kiến trúc. Những gì tôi cung cấp ở đây là các hướng dẫn và nguyên tắc mẫu để hỗ trợ hiểu rõ hơn về hệ thống nhằm tìm ra giải pháp tiềm năng.</p>
+<p>Vào cuối ngày, những sơ đồ này là công cụ để dễ dàng giao tiếp và hiểu biết, và điều cần thiết là điều chỉnh sơ đồ sao cho phù hợp với nhu cầu và phong cách của nhóm bạn./.</p>
+<p>Nguồn: <a href="https://medium.com/the-internal-startup/how-to-draw-useful-technical-architecture-diagrams-2d20c9fda90d" target="_blank" rel="noopener noreffer ">How to Draw Useful Technical Architecture Diagrams | by Jimmy Soh | The Internal Startup | Medium</a></p>
+<p>Ant (20230216)</p></div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2023-02-16</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span><a href="javascript:void(0);" title="Share on Twitter" data-sharer="twitter" data-url="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/" data-title="[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích" data-hashtags="archiecture"><i class="fab fa-twitter fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Facebook" data-sharer="facebook" data-url="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/" data-hashtag="archiecture"><i class="fab fa-facebook-square fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Hacker News" data-sharer="hackernews" data-url="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/" data-title="[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích"><i class="fab fa-hacker-news fa-fw" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on Line" data-sharer="line" data-url="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/" data-title="[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích"><i data-svg-src="https://cdn.jsdelivr.net/npm/simple-icons@7.3.0/icons/line.svg" aria-hidden="true"></i></a><a href="javascript:void(0);" title="Share on 微博" data-sharer="weibo" data-url="http://xuanquang.github.io/posts/draw-technique-architecture-diagram/" data-title="[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích"><i class="fab fa-weibo fa-fw" aria-hidden="true"></i></a></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/archiecture/">archiecture</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/theme-documentation-mermaid-shortcode/" class="prev" rel="prev" title="Theme Documentation - mermaid Shortcode"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Theme Documentation - mermaid Shortcode</a>
+            <a href="/posts/aws-labs/" class="next" rel="next" title="Doing AWS Labs">Doing AWS Labs<i class="fas fa-angle-right fa-fw" aria-hidden="true"></i></a></div>
+</div>
+</article></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.104.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.11"><i class="far fa-kiss-wink-heart fa-fw" aria-hidden="true"></i> LoveIt</a>
+                </div><div class="footer-line" itemscope itemtype="http://schema.org/CreativeWork"><i class="far fa-copyright fa-fw" aria-hidden="true"></i><span itemprop="copyrightYear">2022 - 2023</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/sharer.js@0.5.1/sharer.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

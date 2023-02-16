@@ -46,13 +46,5 @@
     <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"></a>
 <p>The <code>bilibili</code> shortcode embeds a responsive video player for bilibili videos.</p>]]></description>
 </item>
-<item>
-    <title>Theme Documentation - typeit Shortcode</title>
-    <link>http://xuanquang.github.io/posts/theme-documentation-typeit-shortcode/</link>
-    <pubDate>Tue, 03 Mar 2020 10:29:41 &#43;0800</pubDate>
-    <author>Dillon</author>
-    <guid>http://xuanquang.github.io/posts/theme-documentation-typeit-shortcode/</guid>
-    <description><![CDATA[<p>The <code>typeit</code> shortcode provides typing animation based on <a href="https://typeitjs.com/" target="_blank" rel="noopener noreffer ">TypeIt</a> library.</p>]]></description>
-</item>
 </channel>
 </rss>

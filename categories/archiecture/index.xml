@@ -1,0 +1,15 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>archiecture - Category - blog</title>
+        <link>http://xuanquang.github.io/categories/archiecture/</link>
+        <description>archiecture - Category - blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 16 Feb 2023 10:29:41 &#43;0800</lastBuildDate><atom:link href="http://xuanquang.github.io/categories/archiecture/" rel="self" type="application/rss+xml" /><item>
+    <title>[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích</title>
+    <link>http://xuanquang.github.io/posts/draw-technique-architecture-diagram/</link>
+    <pubDate>Thu, 16 Feb 2023 10:29:41 &#43;0800</pubDate>
+    <author>Ant</author>
+    <guid>http://xuanquang.github.io/posts/draw-technique-architecture-diagram/</guid>
+    <description><![CDATA[<h3 id="tham-khảo-năm-sơ-đồ-kiến-trúc-kỹ-thuật-với-các-hướng-dẫn-để-dễ-dàng-thiết-kế-và-triển-khai-giải-pháp-số">Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số.</h3>]]></description>
+</item>
+</channel>
+</rss>

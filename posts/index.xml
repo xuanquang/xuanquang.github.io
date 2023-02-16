@@ -3,13 +3,21 @@
         <title>All Posts - blog</title>
         <link>http://xuanquang.github.io/posts/</link>
         <description>All Posts | blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 25 Dec 2022 21:57:40 &#43;0800</lastBuildDate><atom:link href="http://xuanquang.github.io/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 16 Feb 2023 10:29:41 &#43;0800</lastBuildDate><atom:link href="http://xuanquang.github.io/posts/" rel="self" type="application/rss+xml" /><item>
     <title>Doing AWS Labs</title>
     <link>http://xuanquang.github.io/posts/aws-labs/</link>
     <pubDate>Sun, 25 Dec 2022 21:57:40 &#43;0800</pubDate>
     <author>Quang</author>
     <guid>http://xuanquang.github.io/posts/aws-labs/</guid>
     <description><![CDATA[<p>Learning by doing with <a href="https://cloudjourney.awsstudygroup.com/" target="_blank" rel="noopener noreffer ">https://cloudjourney.awsstudygroup.com/</a></p>]]></description>
+</item>
+<item>
+    <title>[Bài dịch] Cách vẽ Sơ đồ Kiến trúc Kỹ thuật hữu ích</title>
+    <link>http://xuanquang.github.io/posts/draw-technique-architecture-diagram/</link>
+    <pubDate>Thu, 16 Feb 2023 10:29:41 &#43;0800</pubDate>
+    <author>Ant</author>
+    <guid>http://xuanquang.github.io/posts/draw-technique-architecture-diagram/</guid>
+    <description><![CDATA[<h3 id="tham-khảo-năm-sơ-đồ-kiến-trúc-kỹ-thuật-với-các-hướng-dẫn-để-dễ-dàng-thiết-kế-và-triển-khai-giải-pháp-số">Tham khảo năm sơ đồ kiến trúc kỹ thuật với các hướng dẫn để dễ dàng thiết kế và triển khai giải pháp số.</h3>]]></description>
 </item>
 <item>
     <title>Theme Documentation - mermaid Shortcode</title>
@@ -19,14 +27,6 @@
     <guid>http://xuanquang.github.io/posts/theme-documentation-mermaid-shortcode/</guid>
     <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.11" rel="noopener noreffer" target="_blank"></a>
 <p>The <code>mermaid</code> shortcode supports diagrams in Hugo with <a href="https://mermaidjs.github.io/" target="_blank" rel="noopener noreffer ">Mermaid</a> library.</p>]]></description>
-</item>
-<item>
-    <title>Emoji Support</title>
-    <link>http://xuanquang.github.io/posts/emoji-support/</link>
-    <pubDate>Tue, 01 Oct 2019 17:55:28 &#43;0800</pubDate>
-    <author>Dillon</author>
-    <guid>http://xuanquang.github.io/posts/emoji-support/</guid>
-    <description><![CDATA[<p>Emoji can be enabled in a Hugo project in a number of ways.</p>]]></description>
 </item>
 <item>
     <title>Theme Documentation - echarts Shortcode</title>
@@ -61,14 +61,6 @@
     <guid>http://xuanquang.github.io/posts/theme-documentation-bilibili-shortcode/</guid>
     <description><![CDATA[<a href="https://github.com/dillonzq/LoveIt/releases/tag/v0.2.0" rel="noopener noreffer" target="_blank"></a>
 <p>The <code>bilibili</code> shortcode embeds a responsive video player for bilibili videos.</p>]]></description>
-</item>
-<item>
-    <title>Theme Documentation - typeit Shortcode</title>
-    <link>http://xuanquang.github.io/posts/theme-documentation-typeit-shortcode/</link>
-    <pubDate>Tue, 03 Mar 2020 10:29:41 &#43;0800</pubDate>
-    <author>Dillon</author>
-    <guid>http://xuanquang.github.io/posts/theme-documentation-typeit-shortcode/</guid>
-    <description><![CDATA[<p>The <code>typeit</code> shortcode provides typing animation based on <a href="https://typeitjs.com/" target="_blank" rel="noopener noreffer ">TypeIt</a> library.</p>]]></description>
 </item>
 </channel>
 </rss>
